@@ -41,5 +41,3 @@ formularioTransacao.addEventListener("submit", function(event) {
     console.log(novaTransacao);
     formularioTransacao.reset();
 });
-
-export {};
