@@ -10,15 +10,22 @@ let qualquer: any = "";
 const list: number[] = [];
 list.push(13, 22.5, 123, 89, 1.58);
 
+// Enums
+enum TipoTransacao {
+    DEPOSITO = "Depósito",
+    TRANSFERENCIA = "Transferência",
+    PAGAMENTO_BOLETO = "Pagamento de Boleto"
+}
+
 // Type Alias
 type Transacao = {
-    tipoTransacao: string,
+    tipoTransacao: TipoTransacao,
     data: Date,
     valor: number
 }
 
 const novaTransacao: Transacao = {
-    tipoTransacao: "",
+    tipoTransacao: TipoTransacao.DEPOSITO,
     data: new Date(),
     valor: 0
 }
